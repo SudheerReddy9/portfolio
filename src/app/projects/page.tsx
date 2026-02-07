@@ -19,18 +19,42 @@ const Projects: React.FC = () => {
             >
                 <Box
                     sx={{
-                        height: 200,
-                        width: 300
+                        display: 'flex',
+                        flexDirection: 'column',
                     }}
                 >
+                    <Box
+                        sx={{
+                            m: 5,
 
-
-                    <Link href={'https://www.shopgashunters.com/'}
-                        target="_blank"
+                            height: 200,
+                            width: 300,
+                            bgcolor: 'black',
+                            color: 'red'
+                        }}
                     >
-                        <Typography>GasHunters</Typography>
-                    </Link>
+                        <Box sx={{
+
+                            position: 'relative',
+                            width: 300, height: 200
+                        }}>
+                            <Image
+                                src="/Aro_Logo-White.png"
+                                alt="Aro Connection Webiste Logo"
+                                fill
+                                style={{ objectFit: 'contain' }}
+                            />
+                        </Box>
+                        <Link href={'https://www.shopgashunters.com/'}
+                            target="_blank">
+                            <Typography
+                                textAlign={'center'}
+                            >GasHunters</Typography>
+                        </Link>
+                    </Box>
                 </Box>
+
+
                 <Box
                     sx={{
                         display: 'flex',
