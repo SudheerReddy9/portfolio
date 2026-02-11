@@ -94,23 +94,48 @@ const Projects: React.FC = () => {
 
 
             </Box>
+
             <Box
                 sx={{
                     display: 'flex',
-                    flexDirection: 'row',
+                    flexDirection: 'column',
                 }}
             >
-                <Link href={'https://www.playcannabis.fun/'}
-                    target="_blank"
+                <Box
+                    sx={{
+                        m: 5,
+
+                        height: 200,
+                        width: 300,
+                        bgcolor: 'black',
+                        '&:hover': {
+                            transform: 'translateY(-30px)'
+                        }
+                    }}
                 >
-                    <Typography>Play</Typography>
-                </Link>
-                <Link href={'https://www.macpharms.com/'}
-                    target="_blank">
-                    <Typography>Mac Pharms</Typography>
-                </Link>
+                    <Box sx={{
+
+                        position: 'relative',
+                        width: 300, height: 200,
+                        cursor: 'pointer',
+
+                    }}>
+                        <Image
+                            src="/Aro_Logo-White.png"
+                            alt="Aro Connection Webiste Logo"
+                            fill
+                            style={{ objectFit: 'contain' }}
+                        />
+                    </Box>
+                    <Link href={'https://www.shopplaycanna.com/'}
+                        target="_blank">
+                        <Typography
+                            textAlign={'center'}
+                        >Play</Typography>
+                    </Link>
+                </Box>
             </Box>
-        </Box>
+        </Box >
     )
 }
 export default Projects;
