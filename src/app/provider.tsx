@@ -2,8 +2,8 @@
 
 import { ThemeProvider } from '@mui/material/styles';
 import React, { Suspense } from 'react';
-import Header from './components/Header';
 import { lightTheme } from '@/theme';
+import Header from '../components/Header';
 
 
 

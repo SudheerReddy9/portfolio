@@ -26,11 +26,11 @@ const Projects: React.FC = () => {
                     <Box
                         sx={{
                             m: 5,
-
+                            borderRadius: '30px',
                             height: 200,
                             width: 300,
                             bgcolor: 'black',
-                            color: 'red'
+                            color: 'red',
                         }}
                     >
                         <Box sx={{
@@ -48,6 +48,7 @@ const Projects: React.FC = () => {
                         <Link href={'https://www.shopgashunters.com/'}
                             target="_blank">
                             <Typography
+                                pt={3}
                                 textAlign={'center'}
                             >GasHunters</Typography>
                         </Link>
@@ -64,7 +65,7 @@ const Projects: React.FC = () => {
                     <Box
                         sx={{
                             m: 5,
-
+                            borderRadius: '30px',
                             height: 200,
                             width: 300,
                             bgcolor: 'black',
@@ -104,7 +105,7 @@ const Projects: React.FC = () => {
                 <Box
                     sx={{
                         m: 5,
-
+                        borderRadius: '30px',
                         height: 200,
                         width: 300,
                         bgcolor: 'black',
