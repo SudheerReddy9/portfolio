@@ -44,10 +44,10 @@ const Header: React.FC = () => {
                     <Box sx={{
                         position: 'relative',
                         left: '5%',
-                        borderRadius: '50%',
+                        borderRadius: '100%',
                         bgcolor: 'black',
                         height: '50px',
-                        width: '100px',
+                        width: '50px',
                         display: 'flex', alignItems: 'center'
                     }}>
                         <Image
