@@ -6,95 +6,128 @@ const Projects: React.FC = () => {
         <Box
             sx={{
                 display: 'flex',
-                flexDirection: 'column',
+                flexDirection: 'row',
                 justifyContent: 'center',
-                alignItems: 'center'
+                alignItems: 'center',
+                p: 2,
+                height: '100vh',
+                gridTemplateColumns: '1fr 1fr',
+                gridTemplateRows: '1fr 1fr',
             }}
         >
+
             <Box
                 sx={{
                     display: 'flex',
-                    flexDirection: 'row',
+                    flexDirection: 'column',
+                    width: '50%',
+                    height: 400
+
                 }}
             >
-                <Box
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                    }}
+                <Link href={'https://www.shopgashunters.com/'}
+                    target="_blank"
                 >
                     <Box
                         sx={{
-                            m: 5,
-
-                            height: 200,
-                            width: 300,
+                            m: 2,
+                            borderRadius: '5px',
+                            height: 400,
                             bgcolor: 'black',
-                            color: 'red'
+                            cursor: 'pointer',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            justifyItems: 'center',
+                            alignContent: 'center'
                         }}
                     >
                         <Box sx={{
 
                             position: 'relative',
-                            width: 300, height: 200
+                            width: 500, height: 400
                         }}>
                             <Image
-                                src="/Aro_Logo-White.png"
+                                src="/logo-vertical.png"
                                 alt="Aro Connection Webiste Logo"
                                 fill
-                                style={{ objectFit: 'contain' }}
+                                style={{ objectFit: 'cover' }}
                             />
                         </Box>
-                        <Link href={'https://www.shopgashunters.com/'}
-                            target="_blank">
-                            <Typography
-                                textAlign={'center'}
-                            >GasHunters</Typography>
-                        </Link>
+
                     </Box>
-                </Box>
+                </Link>
 
-
-                <Box
+                <Typography
                     sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
+                        textAlign: 'center',
+                        fontWeight: 700,
+                        fontSize: '20px'
+
                     }}
+
                 >
-                    <Box
-                        sx={{
-                            m: 5,
+                    <Link href={'https://www.aroconnection.com/'}
+                        target="_blank">
 
-                            height: 200,
-                            width: 300,
-                            bgcolor: 'black',
-                            color: 'red'
-                        }}
-                    >
-                        <Box sx={{
-
-                            position: 'relative',
-                            width: 300, height: 200
-                        }}>
-                            <Image
-                                src="/Aro_Logo-White.png"
-                                alt="Aro Connection Webiste Logo"
-                                fill
-                                style={{ objectFit: 'contain' }}
-                            />
-                        </Box>
-                        <Link href={'https://www.aroconnection.com/'}
-                            target="_blank">
-                            <Typography
-                                textAlign={'center'}
-                            >Aro Connection</Typography>
-                        </Link>
-                    </Box>
-                </Box>
+                        Gas Hunters
+                    </Link>
+                </Typography>
 
 
             </Box>
 
+
+
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    width: '50%',
+                    height: 400
+                }}
+            >
+                <Link href={'https://www.aroconnection.com/'}>
+                    <Box
+                        sx={{
+                            m: 2,
+                            cursor: 'pointer',
+                            bgcolor: 'black', alignContent: 'center',
+                            justifyItems: 'center',
+                            height: 400
+                        }}
+                    >
+                        <Box sx={{
+
+                            position: 'relative',
+                            width: 500, height: 400
+                        }}>
+                            <Image
+                                src="/Aro_Logo-White.png"
+                                alt="Aro Connection Webiste Logo"
+                                fill
+                                style={{ objectFit: 'contain' }}
+                            />
+                        </Box>
+
+                    </Box>
+                </Link>
+                <Typography
+                    sx={{
+                        textAlign: 'center',
+                        fontWeight: 700,
+                        fontSize: '20px'
+                    }}>
+                    <Link href={'https://www.aroconnection.com/'}
+                        target="_blank">
+
+                        Aro Connection
+                    </Link>
+                </Typography>
+            </Box>
+
+
+
+            {/* 
             <Box
                 sx={{
                     display: 'flex',
@@ -134,7 +167,7 @@ const Projects: React.FC = () => {
                         >Play</Typography>
                     </Link>
                 </Box>
-            </Box>
+            </Box> */}
         </Box >
     )
 }
